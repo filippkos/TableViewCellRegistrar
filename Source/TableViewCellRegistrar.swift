@@ -21,7 +21,7 @@ extension UITableView {
         let cell = self.dequeueReusableCell(withIdentifier: toString(cellClass), for: indexPath)
         
         guard let value = cell as? Result else {
-            fatalError("Dont find identifire")
+            fatalError("Can't find identifier")
         }
         
         return value
@@ -77,10 +77,10 @@ extension UITableView {
 extension UITableViewCell {
     
     static var nib: UINib {
-        return UINib(nibName: self.identifire, bundle: nil)
+        return UINib(nibName: self.identifier, bundle: nil)
     }
     
-    static var identifire: String {
+    static var identifier: String {
         return String(describing: self)
     }
 }
