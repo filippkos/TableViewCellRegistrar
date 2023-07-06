@@ -1,4 +1,4 @@
-## TableViewCellRegistrar
+# TableViewCellRegistrar
 
 This is simple UITableView extension which allows you to register table cells using their class names as an identifier.
 
@@ -14,11 +14,11 @@ or
 ```
 self.tableView?.register(cells: YourTableViewCell.self, YourSecondTableViewCell.self)
 ```
-### Requirements
+## Requirements
 
 iOS 9+. Swift 3.0.
 
-### Installation
+## Installation
 
 TableViewCellRegistrar is available through CocoaPods. To install it, simply add the following line to your Podfile:
 ```
@@ -28,6 +28,6 @@ TableViewCellRegistrar is available through Carthage. To install it, simply add 
 ```
 github "idapgroup/TableViewCellRegistrar"
 ```
-### License
+## License
 
 TableViewCellRegistrar is available under the New BSD license. See the LICENSE file for more info.
