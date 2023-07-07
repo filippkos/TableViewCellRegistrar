@@ -14,6 +14,11 @@ or
 ```
 self.tableView?.register(cells: YourTableViewCell.self, YourSecondTableViewCell.self)
 ```
+To get a cell, you can write
+```
+tableView.dequeueReusableCell(withCellClass: YourTableViewCell.self, for: indexPath)
+```
+
 ## Requirements
 
 iOS 9+. Swift 3.0.
